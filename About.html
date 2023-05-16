@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>About</h1>
+    <dt>FPS Shooting Game</dt>
+    <table border="1px">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Batch</th>
+            <th>Timings</th>
+
+        </tr>
+
+        <tbody id="Data">
+
+        </tbody>
+    </table>
+    <script>
+        var std1 = { ID: 1, Name: "Ahrar", Batch: "202211B1", Timings: "09 to 11" };
+        var std2 = { ID: 2, Name: "Ahrar", Batch: "202211B1", Timings: "11 to 01" };
+        var std3 = { ID: 3, Name: "Ahrar", Batch: "202211B1", Timings: "01 to 03" };
+        var std4 = { ID: 4, Name: "Ahrar", Batch: "202211B1", Timings: "03 to 05" };
+        var std5 = { ID: 5, Name: "Ahrar", Batch: "202211B1", Timings: "05 to 07" };
+        var students = [std1, std2, std3, std4, std5];
+        students.forEach(function (item) {
+
+            document.getElementById("Data").innerHTML += "<tr><td>" + item.ID + "</td><td>" + item.Name + "</td><td>" + item.Batch + "</td><td>" + item.Timings + "</td></tr>";
+
+        });
+
+
+
+
+
+    </script>
+</body>
+
+</html>
